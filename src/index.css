@@ -12,3 +12,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.comment-app {
+  border:1px solid #efefef;
+  width:400px;
+  border-radius:8px;
+  margin: 50px auto 0;
+}
+.comment-input{
+  border:1px solid #efefef;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 8px;
+  padding:10px;
+}
+.comment-field{
+  display: flex;
+  height:50px;
+}
+.comment-field input,
+.comment-field textarea {
+  flex:1;
+  resize: none;
+}
+.comment-field-name{
+  min-width: 100px;
+}
+.commentList-item{
+  display: flex;
+}
+.commentList{
+  padding: 10px;
+  width: 80%;
+  margin:0 auto;
+}
+.comment{
+  display: flex;
+  align-items: center;
+}
+.comment-user{
+  color: #333;
+  font-weight:bold;
+  margin-right:10px;
+}
+.comment p {
+  flex:1;
+}
