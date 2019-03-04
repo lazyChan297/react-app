@@ -62,6 +62,7 @@ class CommentList extends Component {
                 <Comment 
                     comment={comment} 
                     key={i} 
+                    index={i}
                     onDeleteComment={this.handleDeleteComment.bind(this)}/>
                 )}
                 </div>
