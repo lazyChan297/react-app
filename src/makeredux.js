@@ -3,6 +3,7 @@
 function createStore(state,statecChanger) {
     const listeners = []
     const subscribe = (listener) => {
+      console.log('....l')
       listeners.push(listener)
     }
     const getState = () => state
@@ -72,6 +73,7 @@ function createStore(state,statecChanger) {
 
 const store = createStore(appState, stateChanger)
 let oldState = store.getState()
+// subscribe 启动观察者每次state改变后自动更新视图
 store.subscribe(()=>{
     const newState = store.getState()
     renderApp(newState,oldState)
